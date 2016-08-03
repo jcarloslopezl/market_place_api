@@ -1,6 +1,6 @@
 require 'api_constraints'
 
-Rails::Application.routes.draw do
+MarketPlaceApi::Application.routes.draw do
   # Api definition
   namespace :api, defaults: { format: :json },
                               constraints: { subdomain: 'api' }, path: '/'  do
